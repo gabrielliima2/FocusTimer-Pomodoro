@@ -29,7 +29,11 @@ export default function Controls({
         if( !newMinutes ) {
             return false
         }
-        return newMinutes
+        if( newMinutes >= 0 && newMinutes <= 60 ){
+            return newMinutes
+        }else{
+            alert('Digite um número entre 0 e 60')
+        }
     }
 
     return {
