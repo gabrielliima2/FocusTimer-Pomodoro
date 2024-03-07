@@ -1,4 +1,4 @@
-export default function Controls({//esses elementos são variaveis do index, que estão sendo utilizadas no Controls
+export default function Controls({
     buttonPause,
     buttonPlay,
     buttonSet,
@@ -25,7 +25,7 @@ export default function Controls({//esses elementos são variaveis do index, que
     }
 
     function getMinutes() {
-        let newMinutes = prompt('Quantos minitos?')
+        let newMinutes = prompt('Quantos minutos?')
         if( !newMinutes ) {
             return false
         }
