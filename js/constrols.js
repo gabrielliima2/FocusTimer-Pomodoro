@@ -29,10 +29,10 @@ export default function Controls({
         if( !newMinutes ) {
             return false
         }
-        if( newMinutes >= 0 && newMinutes <= 60 ){
+        if( Number.isInteger(newMinutes) && newMinutes >= 0 && newMinutes <= 60 ){
             return newMinutes
         }else{
-            alert('Digite um número entre 0 e 60')
+            alert('Digite um número inteiro entre 0 e 60')
         }
     }
 
