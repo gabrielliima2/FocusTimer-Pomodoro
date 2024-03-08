@@ -29,7 +29,7 @@ export default function Controls({
         if( !newMinutes ) {
             return false
         }
-        if( Number.isInteger(newMinutes) && newMinutes >= 0 && newMinutes <= 60 ){
+        if( newMinutes >= 0 && newMinutes <= 60 ){
             return Math.round(newMinutes)
         }else{
             alert('Digite um número inteiro entre 0 e 60')
